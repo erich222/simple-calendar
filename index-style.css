@@ -1,0 +1,159 @@
+body {background-color:dimgrey}
+
+*{
+    margin:0;
+    padding: 10px;
+}
+.logo{
+    display:flex;
+}
+.inline-block{
+    max-width:25px;
+}
+.title{
+    display:inline;
+}
+.title2{
+    display:inline;
+}
+.time-row1{
+    padding:10px;
+    border: 3px solid purple;
+    display:inline;
+    background-color:azure
+}
+.time-row1-2{
+    padding:10px;
+    border: 3px solid purple;
+    display:inline;
+    background-color:azure;
+}
+.time-row2{
+    padding:10px;
+    border: 3px solid purple;
+    display:inline;
+    background-color:azure
+}
+.time-row2-2{
+    padding:10px;
+    border: 3px solid purple;
+    display:inline;
+    background-color:azure;
+}
+.time-row3{
+    padding:10px;
+    border: 3px solid purple;
+    display:inline;
+    background-color:azure
+}
+.time-row3-2{
+    padding:10px;
+    border: 3px solid purple;
+    display:inline;
+    background-color:azure;
+}
+.time-row4{
+    padding:10px;
+    border: 3px solid purple;
+    display:inline;
+    background-color:azure
+}
+.time-row4-2{
+    padding:10px;
+    border: 3px solid purple;
+    display:inline;
+    background-color:azure;
+}
+.time-row5{
+    padding:10px;
+    border: 3px solid purple;
+    display:inline;
+    background-color:azure
+}
+.time-row5-2{
+    padding:10px;
+    border: 3px solid purple;
+    display:inline;
+    background-color:azure;
+}
+.time-row6{
+    padding:10px;
+    border: 3px solid purple;
+    display:inline;
+    background-color:azure
+}
+.time-row6-2{
+    padding:10px;
+    border: 3px solid purple;
+    display:inline;
+    background-color:azure;
+}
+.time-row7{
+    padding:10px;
+    border: 3px solid purple;
+    display:inline;
+    background-color:azure
+}
+.time-row7-2{
+    padding:10px;
+    border: 3px solid purple;
+    display:inline;
+    background-color:azure;
+}
+.time-row8{
+    padding:10px;
+    border: 3px solid purple;
+    display:inline;
+    background-color:azure
+}
+.time-row8-2{
+    padding:10px;
+    border: 3px solid purple;
+    display:inline;
+    background-color:azure;
+}
+.time-row9{
+    padding:10px;
+    border: 3px solid purple;
+    display:inline;
+    background-color:azure
+}
+.time-row9-2{
+    padding:10px;
+    border: 3px solid purple;
+    display:inline;
+    background-color:azure;
+}
+.time-edit{
+    text-align:center;
+}
+.time-edit2{
+    text-align:center;
+}
+.time-edit3{
+    text-align:center;
+}
+.time-edit4{
+    text-align:center;
+}
+.time-edit5{
+    text-align:center;
+}
+.time-edit6{
+    text-align:center;
+}
+.time-edit7{
+    text-align:center;
+}
+.time-edit8{
+    text-align:center;
+}
+.time-edit9{
+    text-align:center;
+}
+.button{
+    display:block;
+    margin:auto;
+    padding:10px;
+    margin-bottom:20px;
+}
