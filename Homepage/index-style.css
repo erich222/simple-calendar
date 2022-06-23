@@ -1,12 +1,15 @@
 body {background-color:dimgrey}
 
 *{
-    margin:10px;
-    padding: 10px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .title{
     display:flex; 
+    margin:10px;
+    padding:10px;
 }
 
 .flexbox-container-row-1{
@@ -46,10 +49,13 @@ body {background-color:dimgrey}
     justify-content: center;
 }
 .flexbox-item {
+    display:flex;
     width: 500px;
     height:40px;
     border: 3px solid purple;
     background-color:azure;
+    margin:10px;
+    padding:10px;
 }
 .text{
     text-align:center;
@@ -57,8 +63,13 @@ body {background-color:dimgrey}
 
 .button{
     display:flex;
-    justify-content:center;
-    align-items:center;
+    position:absolute;
     border: 3px solid purple;
     background-color:azure;
+    padding:10px;
+    margin:10px;
+}
+.app{
+    display:flex;
+    min-height:100vh;
 }
