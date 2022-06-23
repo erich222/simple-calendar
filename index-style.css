@@ -3,6 +3,7 @@ body {background-color:dimgrey}
 *{
     margin:0;
     padding: 0;
+    box-sizing:border-box;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .title{
@@ -48,6 +49,7 @@ body {background-color:dimgrey}
     justify-content: center;
 }
 .flexbox-item {
+    display:flex;
     width: 500px;
     height:40px;
     border: 3px solid purple;
@@ -61,41 +63,13 @@ body {background-color:dimgrey}
 
 .button{
     display:flex;
-    justify-content:center;
-    align-items:center;
+    position:absolute;
     border: 3px solid purple;
     background-color:azure;
-    margin:10px;
     padding:10px;
+    margin:10px;
 }
 .app{
     display:flex;
     min-height:100vh;
-}
-.sidebar{
-    flex: 1 1 0;
-    max-width:150px;
-    padding: 2rem 1rem;
-    background-color:azure;
-}
-.sidebar h3{
-    color:darkgrey;
-    text-transform:uppercase;
-    font-size:0.75rem;
-    margin-bottom:0.5em;
-}
-.sidebar .menu{
-    margin: 0 -1rem;
-}
-.sidebar .menu .menu-item{
-    display:block;
-    padding: 1em;
-    color:dimgray;
-    text-decoration: none;
-    transition: 0.1s linear;
-}
-.sidebar .menu .menu-item:hover,
-.sidebar .menu .menu-item.is-active{
-    color: cyan;
-    border-right:3px solid purple;
 }
