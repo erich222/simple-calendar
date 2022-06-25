@@ -8,9 +8,9 @@ body {background-color:dimgrey}
     display:flex; 
 }
 
-.calendar-col {
+.calendar.main{
     display: flex;
-    flex-direction: column;
+    margin-top: 200px;
 }
 
 
@@ -19,6 +19,12 @@ body {background-color:dimgrey}
     height:40px;
     border: 3px solid purple;
     background-color:azure;
+}
+.firstHalf{
+    padding-right: 0px;
+}
+.secondHalf{
+    padding-left: 0px;
 }
 .text{
     text-align:center;

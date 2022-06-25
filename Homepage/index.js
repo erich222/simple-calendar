@@ -3,14 +3,21 @@
 function generateCalendar(startTime, endTime) {
     const numRows = Math.abs(((endTime-startTime)/2));
     const firstHalf = document.querySelector('.firstHalf');
-    firstHalf.appendChild(generateCalendarTimeBox(1));
-    firstHalf.appendChild(generateCalendarTimeBox(2));    
+    const secondHalf = document.querySelector('.secondHalf');
+    for(i = startTime+1; i < startTime + numRows + 1; i++) {
+        firstHalf.appendChild(generateCalendarTimeBox(i));
+    }
+    
+    for(i = startTime+numRows+1; i < endTime+1; i++) {
+        secondHalf.appendChild(generateCalendarTimeBox(i));
+    }  
 }
 
+//Generates timeboxes for main calendar
 function generateCalendarTimeBox(time){
     const timebox = document.createElement('div');
     timebox.classList.add("timebox");
-    timebox.textContent = time;
+    timebox.textContent = `${time} PM`;
     return timebox;
 
 }

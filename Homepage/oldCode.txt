@@ -116,3 +116,40 @@
                 </p>
             </div>
         </div> -->
+
+.flexbox-container-row-1{
+    display: flex;
+    justify-content: center;
+}
+.flexbox-container-row-2{
+    display:flex;
+    justify-content: center;
+}
+.flexbox-container-row-3{
+    display:flex;
+    justify-content: center;
+}
+.flexbox-container-row-4{
+    display:flex;
+    justify-content: center;
+}
+.flexbox-container-row-5{
+    display:flex;
+    justify-content: center;
+}
+.flexbox-container-row-6{
+    display:flex;
+    justify-content: center;
+}
+.flexbox-container-row-7{
+    display:flex;
+    justify-content: center;
+}
+.flexbox-container-row-8{
+    display:flex;
+    justify-content: center;
+}
+.flexbox-container-row-9{
+    display:flex;
+    justify-content: center;
+}
