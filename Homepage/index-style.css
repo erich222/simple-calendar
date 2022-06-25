@@ -1,7 +1,6 @@
 body {background-color:dimgrey}
 
 *{
-    margin:10px;
     padding: 10px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
@@ -9,43 +8,13 @@ body {background-color:dimgrey}
     display:flex; 
 }
 
-.flexbox-container-row-1{
+.calendar-col {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
-.flexbox-container-row-2{
-    display:flex;
-    justify-content: center;
-}
-.flexbox-container-row-3{
-    display:flex;
-    justify-content: center;
-}
-.flexbox-container-row-4{
-    display:flex;
-    justify-content: center;
-}
-.flexbox-container-row-5{
-    display:flex;
-    justify-content: center;
-}
-.flexbox-container-row-6{
-    display:flex;
-    justify-content: center;
-}
-.flexbox-container-row-7{
-    display:flex;
-    justify-content: center;
-}
-.flexbox-container-row-8{
-    display:flex;
-    justify-content: center;
-}
-.flexbox-container-row-9{
-    display:flex;
-    justify-content: center;
-}
-.flexbox-item {
+
+
+.timebox {
     width: 500px;
     height:40px;
     border: 3px solid purple;
