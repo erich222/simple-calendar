@@ -38,8 +38,41 @@ body {background-color:dimgrey}
     background-color:azure;
 }
 
+.button2 {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:purple;
+    font-weight: bolder;
+    font-size: large;
+    color:azure;
+    width: 300px;
+    height:75px;
+}
+
 .simple-calendar-homepage{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.popup.addEvent {
+    background-color: rgb(128, 120, 120);
+    border-style: solid;
+    border-color: black;
+    width:800px;
+    height:600px;
+    position: relative;
+    top:-500px;
+    display:flex;
+    flex-direction: column;
+}
+
+.userInput {
+    border: 3px solid purple;
+    margin-top: 0px;
+}
+.eventTime{
+    padding-left: 0px;
+    display: flex;
 }

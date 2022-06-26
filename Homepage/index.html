@@ -14,11 +14,30 @@
             document.write(date);
             </script>
             </h1>
-            <button class="button">Add Event</button>
+            <button class="button addEvent">Add Event</button>
             <div class = "calendar main">
                 <div class = "calendar firstHalf"></div>
                 <div class = "calendar secondHalf"></div>
             </div>
+
+            <div class = "popup addEvent">
+                <h1 class =  "title">Add Event</h1>
+                <label for = "eventName"><strong>Event Name</strong></label>
+                <input class = "userInput" id = "eventName" type = "text">
+                <div class = "eventTime">
+                    <div>
+                        <h3 style = "margin-bottom: 0px;">startTime</h3>
+                        <input class = "userInput startTime"  type = "text">
+                    </div>
+                    <div>
+                        <h3  style ="margin-bottom: 0px;">endTime</h3>
+                        <input class = "userInput endTime"  type = "text">
+                    </div>
+                </div>
+                <button style = "margin-left: auto; margin-top: auto;" class = "button2 add">Add Event</button>
+            </div>
         </div>
+
+        
     </body>
 </html>
