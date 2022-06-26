@@ -1,5 +1,6 @@
 
 //Creates main calendar body (currently only works with an even number of elapsed hours and does not differentiate between AM and PM)
+//startTime inclusive endTime exclusive
 function generateCalendar(startTime, endTime) {
     const numRows = Math.abs(((endTime-startTime)/2));
     const firstHalf = document.querySelector('.firstHalf');
@@ -22,4 +23,4 @@ function generateCalendarTimeBox(time){
 
 }
 
-generateCalendar(4,8);
+generateCalendar(5,9);
