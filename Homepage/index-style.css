@@ -1,11 +1,12 @@
 body {background-color:dimgrey}
 
 *{
-    padding: 10px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
 }
 .title{
     display:flex; 
+    margin:10px;
+    padding:10px;
 }
 
 .calendar.main{
@@ -13,12 +14,12 @@ body {background-color:dimgrey}
     margin-top: 200px;
 }
 
-
-.timebox {
     width: 500px;
     height:40px;
     border: 3px solid purple;
     background-color:azure;
+    margin:10px;
+    padding:10px;
 }
 .firstHalf{
     padding-right: 0px;
@@ -32,10 +33,15 @@ body {background-color:dimgrey}
 
 .button{
     display:flex;
-    justify-content:center;
-    align-items:center;
+    position:absolute;
     border: 3px solid purple;
     background-color:azure;
+    padding:10px;
+    margin:10px;
+}
+.app{
+    display:flex;
+    min-height:100vh;
 }
 
 .simple-calendar-homepage{
