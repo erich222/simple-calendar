@@ -1,10 +1,7 @@
 body {background-color:dimgrey}
 
 *{
-    margin:0;
-    padding: 0;
-    box-sizing:border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 .title{
     display:flex; 
@@ -12,50 +9,23 @@ body {background-color:dimgrey}
     padding:10px;
 }
 
-.flexbox-container-row-1{
+.calendar.main{
     display: flex;
-    justify-content: center;
+    margin-top: 200px;
 }
-.flexbox-container-row-2{
-    display:flex;
-    justify-content: center;
-}
-.flexbox-container-row-3{
-    display:flex;
-    justify-content: center;
-}
-.flexbox-container-row-4{
-    display:flex;
-    justify-content: center;
-}
-.flexbox-container-row-5{
-    display:flex;
-    justify-content: center;
-}
-.flexbox-container-row-6{
-    display:flex;
-    justify-content: center;
-}
-.flexbox-container-row-7{
-    display:flex;
-    justify-content: center;
-}
-.flexbox-container-row-8{
-    display:flex;
-    justify-content: center;
-}
-.flexbox-container-row-9{
-    display:flex;
-    justify-content: center;
-}
-.flexbox-item {
-    display:flex;
+
     width: 500px;
     height:40px;
     border: 3px solid purple;
     background-color:azure;
     margin:10px;
     padding:10px;
+}
+.firstHalf{
+    padding-right: 0px;
+}
+.secondHalf{
+    padding-left: 0px;
 }
 .text{
     text-align:center;
@@ -72,4 +42,10 @@ body {background-color:dimgrey}
 .app{
     display:flex;
     min-height:100vh;
+}
+
+.simple-calendar-homepage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
