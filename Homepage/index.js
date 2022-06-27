@@ -23,4 +23,18 @@ function generateCalendarTimeBox(time){
 
 }
 
+document.querySelector('.button.addEvent').addEventListener('click', toggleAddEventScreen)
+document.querySelector('.button2.add').addEventListener('click', toggleAddEventScreen)
+function toggleAddEventScreen(e) {
+    const screen = document.querySelector('.popup.addEvent');
+    console.log(e.target)
+    console.log(e.target.classList.contains('.add'))
+   if( e.target.classList.contains('add')) {
+        screen.style.display = 'none';
+        
+    }
+    else {
+        screen.style.display = 'flex'
+    }
+}
 generateCalendar(5,9);

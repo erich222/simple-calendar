@@ -57,6 +57,7 @@ body {background-color:dimgrey}
 }
 
 .popup.addEvent {
+    display:flex;
     background-color: rgb(128, 120, 120);
     border-style: solid;
     border-color: black;
@@ -64,7 +65,7 @@ body {background-color:dimgrey}
     height:600px;
     position: relative;
     top:-500px;
-    display:flex;
+    
     flex-direction: column;
 }
 
@@ -76,3 +77,4 @@ body {background-color:dimgrey}
     padding-left: 0px;
     display: flex;
 }
+
