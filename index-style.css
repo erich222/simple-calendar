@@ -1,0 +1,83 @@
+body {
+    background-color:dimgrey;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    font-size:16px;
+    --text-primary:gray;
+    --text-secondary:white;
+    --bg-primary:#23232e;
+    --bg-secondary:#141418;
+}
+main {
+    margin-left:7rem;
+    padding: 1rem;
+}
+.sidebar {
+    width: 7rem;
+    height: 100vh;
+    position:fixed;
+    background-color:azure;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.flexbox-container-row-1{
+    display: flex;
+    justify-content: center;
+}
+.flexbox-container-row-2{
+    display:flex;
+    justify-content: center;
+}
+.flexbox-container-row-3{
+    display:flex;
+    justify-content: center;
+}
+.flexbox-container-row-4{
+    display:flex;
+    justify-content: center;
+}
+.flexbox-container-row-5{
+    display:flex;
+    justify-content: center;
+}
+.flexbox-container-row-6{
+    display:flex;
+    justify-content: center;
+}
+.flexbox-container-row-7{
+    display:flex;
+    justify-content: center;
+}
+.flexbox-container-row-8{
+    display:flex;
+    justify-content: center;
+}
+.flexbox-container-row-9{
+    display:flex;
+    justify-content: center;
+}
+.flexbox-item {
+    display:flex;
+    width: 500px;
+    height:40px;
+    border: 3px solid purple;
+    background-color:azure;
+    margin:10px;
+    padding:10px;
+}
+.text{
+    text-align:center;
+}
+
+.button{
+    padding:20px;
+    margin:10px;
+    text-align:center;
+}
