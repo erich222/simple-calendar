@@ -31,7 +31,6 @@ function toggleAddEventScreen(e) {
     console.log(e.target.classList.contains('.add'))
    if( e.target.classList.contains('add')) {
         screen.style.display = 'none';
-        
     }
     else {
         screen.style.display = 'flex'
