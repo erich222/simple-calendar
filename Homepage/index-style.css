@@ -1,4 +1,7 @@
-body {background-color:dimgrey}
+body {
+    background-color:#333131;
+    font-family:'Fira Sans', sans-serif;
+}
 
 *{
     margin:0;
@@ -88,7 +91,7 @@ body {background-color:dimgrey}
     left: 0;
     width: 4rem;
     height: 100vh;
-    background-color:darkslategray;
+    background-color:rgb(39, 39, 39);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     overflow: hidden;
