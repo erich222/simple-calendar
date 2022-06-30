@@ -6,18 +6,27 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src = "index.js" defer></script>
         <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
 
     </head>
     <body>
-        <img src="../Logo/sclogo.png">
+        <div class="header">
+            <div class="bar">
+                <div class="image">
+                    <img src="../Logo/sclogo.png" width="30" height="22">
+                </div>
+                <div class="title">
+                    <h1 class="title"> &nbsp  Simple Calendar &nbsp| &nbspToday's Date:
+                        <script>
+                    date = new Date().toLocaleDateString();
+                    document.write(date);
+                    </script>
+                    </h1>
+                </div>
+            </div>
+        </div>
         <div class = "simple-calendar-homepage">
-            <h1 class="title">Simple Calendar: Today's Date:
-                <script>
-            date = new Date().toLocaleDateString();
-            document.write(date);
-            </script>
-            </h1>
+           
             <button class="button addEvent">Add Event</button>
             <div class = "calendar main">
                 <div class = "calendar firstHalf"></div>
@@ -26,7 +35,6 @@
 
 
             </div>
-
             <div class = "popup addEvent" >
                 <h1 class =  "title" style = "margin-left: var(--margin_standard);">Add Event</h1>
                 <form class = "form addEvent">
@@ -52,12 +60,32 @@
         </main>
         <div class="sidebar">
             <ul style = "list-style: none; padding-left: 0px;">
-                <li class="sidebar-item"><i class="fa fa-home"></i>Home</li>
-                <li class="sidebar-item"><i class="fa fa-gear"></i>Settings</li>
-                <li class="sidebar-item"><i class="fa fa-calendar"></i>Day</li>
-                <li class="sidebar-item"><i class="fa fa-calendar"></i>Week</li>
-                <li class="sidebar-item"><i class="fa fa-calendar"></i>Month</li>
-                <li class="sidebar-item"><i class="fa fa-calendar"></i>Year</li>
+                <li class="sidebar-item">
+                    <i class="fa fa-home">
+
+                    </i>
+                    Home
+                </li>
+                <li class="sidebar-item">
+                    <i class="fa fa-calendar"></i>
+                    Day
+                </li>
+                <li class="sidebar-item">
+                    <i class="fa fa-calendar"></i>
+                    Week
+                </li>
+                <li class="sidebar-item">
+                    <i class="fa fa-calendar"></i>
+                    Month
+                </li>
+                <li class="sidebar-item">
+                    <i class="fa fa-calendar"></i>
+                    Year
+                </li>
+                <li class="sidebar-item">
+                    <i class="fa fa-gear"></i>
+                    Settings
+                </li>
             </ul>
         </div>
 
