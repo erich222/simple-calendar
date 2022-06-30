@@ -27,21 +27,25 @@
 
             </div>
 
-            <div class = "popup addEvent" style = "margin-top: 50px;">
-                <h1 class =  "title">Add Event</h1>
-                <label for = "eventName"><strong>Event Name</strong></label>
-                <input class = "userInput" id = "eventName" type = "text">
-                <div class = "eventTime">
+            <div class = "popup addEvent" >
+                <h1 class =  "title" style = "margin-left: var(--margin_standard);">Add Event</h1>
+                <form class = "form addEvent">
                     <div>
-                        <h3 style = "margin-bottom: 0px;">startTime</h3>
-                        <input class = "userInput startTime"  type = "text">
+                        <label for = "eventName" style = "margin-left: var(--margin_standard);"><strong>Event Name</strong></label><br>
+                        <input class = "userInput" id = "eventName" type = "text">
                     </div>
-                    <div>
-                        <h3  style ="margin-bottom: 0px;">endTime</h3>
-                        <input class = "userInput endTime"  type = "text">
+                    <div class = "eventTime">
+                        <div>
+                            <label for = "startTime" style = "margin-bottom: 0px; margin-left: var(--margin_standard);"><strong>startTime</strong></label><br>
+                            <input class = "userInput" id = "startTime" type = "text">
+                        </div>
+                        <div>
+                            <label for = "endTime"  style ="margin-bottom: 0px;"><strong>endTime</strong></label><br>
+                            <input class = "userInput" id = "endTime" type = "text">
+                        </div>
                     </div>
-                </div>
-                <button style = "margin-left: auto; margin-top: auto;" class = "button2 add">Add Event</button>
+                    <button style = "margin-left: auto; margin-top: auto;" class = "button2 add">Add Event</button>
+                </form>
             </div>
         </div>
 

@@ -1,12 +1,15 @@
 body {
     background-color:#333131;
     font-family:'Cutive Mono', monospace;
+
 }
 
-*{
-    margin:0;
-    padding:0;
+.simple-calendar-homepage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .title{
     display:flex; 
     color:lightgray;
@@ -55,11 +58,7 @@ body {
     height:75px;
 }
 
-.simple-calendar-homepage{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/*AddEvent*/
 
 .popup.addEvent {
     display: none;
@@ -69,7 +68,7 @@ body {
     width:800px;
     height:600px;
     position: relative;
-    top:-500px;
+    top:-300px;
     
     flex-direction: column;
 }
@@ -89,6 +88,25 @@ body {
     color:white;
     margin-left:4.5rem;
 }
+
+.form.addEvent {
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    gap:30px;
+}
+#eventName {
+    width: 75%;
+    margin-left: var(--margin_standard);
+}
+
+#startTime {
+    margin-left: var(--margin_standard);
+    margin-right:var(--margin_standard);
+}
+
+/*Sidebar*/
+
 .sidebar{
     position: fixed;
     top: 0;
