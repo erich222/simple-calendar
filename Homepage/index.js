@@ -1,24 +1,53 @@
 
-//Creates main calendar body (currently only works with an even number of elapsed hours and does not differentiate between AM and PM)
+//Creates main calendar body (currently only works with an even number of elapsed hours)
 //startTime inclusive endTime exclusive
-function generateCalendar(startTime, endTime) {
-    const numRows = Math.abs(((endTime-startTime)/2));
+function generateCalendar(startHour,start_ampm, endHour, end_ampm) {
     const firstHalf = document.querySelector('.firstHalf');
-    const secondHalf = document.querySelector('.secondHalf');
-    for(i = startTime+1; i < startTime + numRows + 1; i++) {
-        firstHalf.appendChild(generateCalendarTimeBox(i));
-    }
-    
-    for(i = startTime+numRows+1; i < endTime+1; i++) {
-        secondHalf.appendChild(generateCalendarTimeBox(i));
-    }  
+    const secondHalf = document.querySelector('.secondHalf');   
+    const hours = getElapsedHours(startHour,start_ampm, endHour, end_ampm);
+    console.log(hours);
+        for(i = 0; i < Math.floor(hours.length/2)+1; i++) {firstHalf.appendChild(generateCalendarTimeBox(hours[i].hour, hours[i].ampm ))}
+        for(i = Math.floor(hours.length/2)+1; i < hours.length; i++) {secondHalf.appendChild(generateCalendarTimeBox(hours[i].hour, hours[i].ampm ))}
+        if(firstHalf.childNodes.length != secondHalf.childNodes.length) {
+            let time = createTime(endHour, end_ampm);
+            secondHalf.appendChild(generateCalendarTimeBox(time.hour, time.ampm))
+        }
+
+
 }
+const createTime = (hour, ampm) => {return {hour, ampm};}
+function getElapsedHours(startHour,start_ampm, endHour, end_ampm) {
+    hours = [];
+    if(start_ampm == end_ampm) {
+        for(i = startHour; i < endHour; i++) {
+            hours.push(time = createTime(i, start_ampm));
+        }
+    }
+    else if(start_ampm != end_ampm) {
+        for(i = startHour; i <12; i++) {
+            hours.push(time = createTime(i, start_ampm));
+        }
+        hours.push(time = createTime(12, "PM"));
+        for(i = 1; i <endHour; i++) {
+            hours.push(time = createTime(i, end_ampm));
+        }
+
+    }
+    return hours;
+}
+    
+    
+
+
+
+
+    
 
 //Generates timeboxes for main calendar
-function generateCalendarTimeBox(time){
+function generateCalendarTimeBox(time, ampm){
     const timebox = document.createElement('div');
     timebox.classList.add("timebox");
-    timebox.textContent = `${time} PM`;
+    timebox.textContent = `${time} ${ampm}`;
     return timebox;
 
 }
@@ -36,4 +65,5 @@ function toggleAddEventScreen(e) {
         screen.style.display = 'flex'
     }
 }
-generateCalendar(5,9);
+generateCalendar(5, "AM",8, "PM");
+
