@@ -28,7 +28,7 @@ body {
 
 .calendar.main{
     display: flex;
-    margin-top: 200px;
+    margin-top: 20px;
 }
 
 .timebox {
@@ -37,6 +37,7 @@ body {
     border: 1px solid #9851EC;
     background-color:lightgray;
     margin:0px;
+    padding:10px;
 }
 .firstHalf{
     margin-right: 0px;
@@ -51,7 +52,7 @@ body {
 .button{
     display:flex;
     border: 1px solid #9851EC;
-    background-color;
+    background-color: rgb(211, 211, 211, 0.8);
     padding:10px;
     margin:25px;
     font-family:'Cutive Mono', monospace;
