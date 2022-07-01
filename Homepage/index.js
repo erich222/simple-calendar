@@ -37,3 +37,19 @@ function toggleAddEventScreen(e) {
     }
 }
 generateCalendar(5,9);
+
+let isCalendarView = true
+document.querySelector('.button.toggleView').addEventListener('click', toggleView)
+function toggleView(e){
+    if (isCalendarView)
+    {
+        isCalendarView = false
+        document.querySelector('.button.toggleView').textContent = "List View"
+        // to do list crap
+    }
+    else{
+        isCalendarView = true
+        document.querySelector('.button.toggleView').textContent = "Calendar View"
+        // regular all time slots crap
+    }
+}
