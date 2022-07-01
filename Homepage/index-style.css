@@ -52,7 +52,7 @@ body {
 .button{
     display:flex;
     border: 1px solid #9851EC;
-    background-color: rgb(211, 211, 211, 0.8);
+    background-color:lightgray;
     padding:10px;
     margin:25px;
     font-family:'Cutive Mono', monospace;
